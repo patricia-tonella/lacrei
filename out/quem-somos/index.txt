@@ -1,0 +1,52 @@
+1:"$Sreact.fragment"
+3:I[1063,["177","static/chunks/app/layout-d7565e1c3e8264f7.js"],"StyledComponentsProvider"]
+4:I[6652,["177","static/chunks/app/layout-d7565e1c3e8264f7.js"],"GlobalStyles"]
+5:I[9852,["177","static/chunks/app/layout-d7565e1c3e8264f7.js"],"ClientLayout"]
+6:I[7555,[],""]
+7:I[1295,[],""]
+8:I[9543,["345","static/chunks/app/not-found-d44c7435431c4531.js"],"default"]
+9:I[2570,["317","static/chunks/app/quem-somos/page-9bd1f17a9da6eaf4.js"],"AboutUs"]
+a:I[9665,[],"OutletBoundary"]
+d:I[9665,[],"ViewportBoundary"]
+f:I[9665,[],"MetadataBoundary"]
+11:I[6614,[],""]
+:HL["/_next/static/media/40d40f0f334d7ad1-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/a300c6f1e0f15a2e.css","style"]
+2:T4b4,
+            /* Prevenção de FOUC - Flash of Unstyled Content */
+            body { 
+              opacity: 0; 
+              transition: opacity 0.3s ease-in-out;
+              background-color: #ffffff;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            }
+            body.loaded { 
+              opacity: 1; 
+            }
+            /* Skeleton loading para componentes principais */
+            .skeleton {
+              background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+              background-size: 200% 100%;
+              animation: loading 1.5s infinite;
+            }
+            @keyframes loading {
+              0% { background-position: 200% 0; }
+              100% { background-position: -200% 0; }
+            }
+            /* Prevenção de layout shift */
+            * {
+              box-sizing: border-box;
+            }
+            html {
+              scroll-behavior: smooth;
+            }
+            /* Font display swap para melhor performance */
+            @font-face {
+              font-family: 'Nunito';
+              font-display: swap;
+            }
+          0:{"P":null,"b":"T5C4jK31aI8mAkKEqJlg8","p":"","c":["","quem-somos",""],"i":false,"f":[[["",{"children":["quem-somos",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a300c6f1e0f15a2e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"pt-BR","children":[["$","head",null,{"children":["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"className":"__className_24eb5e","children":[["$","$L3",null,{"children":[["$","$L4",null,{}],["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L8",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            document.addEventListener('DOMContentLoaded', function() {\n              // Remover skeleton loading\n              const skeletons = document.querySelectorAll('.skeleton');\n              skeletons.forEach(skeleton => {\n                skeleton.classList.remove('skeleton');\n              });\n              \n              // Mostrar body com fade in\n              document.body.classList.add('loaded');\n              \n              // Preload de imagens críticas\n              const criticalImages = document.querySelectorAll('img[data-critical]');\n              criticalImages.forEach(img => {\n                if (img.dataset.src) {\n                  img.src = img.dataset.src;\n                  img.removeAttribute('data-src');\n                }\n              });\n            });\n          "}}]]}]]}]]}],{"children":["quem-somos",["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L9",null,{}],"$undefined",null,["$","$La",null,{"children":["$Lb","$Lc",null]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","_5i46Mvgna0wzb5w1_Tbw",{"children":[["$","$Ld",null,{"children":"$Le"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Lf",null,{"children":"$L10"}]]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+e:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#349E35"}]]
+b:null
+c:null
+10:[["$","title","0",{"children":"Lacrei Saúde - Cuidando da sua saúde com excelência e humanização"}],["$","meta","1",{"name":"description","content":"Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado. Sua saúde, nossa prioridade."}],["$","meta","2",{"name":"author","content":"Lacrei Saúde"}],["$","meta","3",{"name":"keywords","content":"saúde, telemedicina, consultas online, exames, vacinação, fisioterapia, psicologia"}],["$","meta","4",{"name":"creator","content":"Lacrei Saúde"}],["$","meta","5",{"name":"publisher","content":"Lacrei Saúde"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"property":"og:title","content":"Lacrei Saúde - Cuidando da sua saúde com excelência e humanização"}],["$","meta","8",{"property":"og:description","content":"Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado."}],["$","meta","9",{"property":"og:site_name","content":"Lacrei Saúde"}],["$","meta","10",{"property":"og:locale","content":"pt_BR"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Lacrei Saúde - Cuidando da sua saúde com excelência e humanização"}],["$","meta","14",{"name":"twitter:description","content":"Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado."}],["$","link","15",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"268x203"}]]
