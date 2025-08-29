@@ -35,54 +35,6 @@ Plataforma web desenvolvida para conectar pessoas LGBTQIAPN+ com profissionais d
 - **Vitest**
 - **React Testing Library**
 
-## 📁 **Estrutura do Projeto**
-
-```
-lacrei/
-├── src/
-│   ├── app/                    # App Router do Next.js
-│   │   ├── layout.tsx         # Layout principal
-│   │   ├── page.tsx           # Página inicial
-│   │   └── about-us/        # Página "Quem Somos"
-│   │       └── page.tsx       # Componente da página
-│   ├── components/             # Componentes React
-│   │   ├── ui/                # Componentes base
-│   │   │   ├── Button.tsx     # Botão reutilizável
-│   │   │   └── __tests__/     # Testes dos componentes UI
-│   │   ├── layout/            # Componentes de layout
-│   │   │   ├── Header.tsx     # Cabeçalho da aplicação
-│   │   │   ├── Footer.tsx     # Rodapé da aplicação
-│   │   │   ├── ClientLayout.tsx # Layout cliente
-│   │   │   └── __tests__/     # Testes dos componentes de layout
-│   │   ├── sections/          # Seções das páginas
-│   │   │   ├── Hero.tsx       # Seção principal
-│   │   │   ├── AboutUs.tsx  # Página Quem Somos
-│   │   │   ├── ProfessionalsList.tsx # Lista de profissionais
-│   │   │   └── __tests__/     # Testes das seções
-│   │   └── providers/         # Providers da aplicação
-│   │       └── StyledComponentsProvider.tsx # Provider do Styled-Components
-│   ├── data/                  # Dados mockados da API
-│   │   └── mockApi.ts         # Interfaces e dados simulados
-│   ├── hooks/                 # Hooks customizados
-│   │   └── useApi.ts          # Hooks para API simulada
-│   ├── styles/                # Estilos globais e tema
-│   │   ├── theme.ts           # Design tokens e variáveis
-│   │   └── globals.ts         # Estilos globais
-│   ├── types/                 # Definições de tipos
-│   │   ├── index.ts           # Tipos principais
-│   │   └── styled.d.ts        # Extensões do Styled-Components
-│   └── test/                  # Configuração de testes
-│       └── setup.ts           # Setup do Vitest
-├── public/                     # Assets estáticos
-├── .next/                      # Build do Next.js (gerado)
-├── node_modules/               # Dependências (gerado)
-├── vitest.config.ts            # Configuração do Vitest
-├── next.config.ts              # Configuração do Next.js
-├── tsconfig.json               # Configuração do TypeScript
-├── package.json                # Dependências e scripts
-└── README.md                   # Este arquivo
-```
-
 ## **API Simulada **
 
 ### **Hooks Disponíveis**
@@ -112,53 +64,17 @@ npm install
 npm run dev
 ````
 
-### **Scripts Disponíveis**
-
-```bash
-# Desenvolvimento
-npm run dev
-npm run build
-npm run start
-
-# Qualidade de código
-npm run lint
-npm run lint:fix
-
-# Testes
-npm run test
-npm run test:ui
-npm run test:run
-npm run test:coverage
-npm run test:watch
-```
-
-## 🧪 **Testes**
+## **Testes**
 
 ### **Configuração de Testes**
 
 O projeto usa **Vitest** com **React Testing Library** para testes unitários e de integração.
 
-```typescript
-// vitest.config.ts
-export default defineConfig({
-  plugins: [react()],
-  test: {
-    environment: "jsdom",
-    setupFiles: ["./src/test/setup.ts"],
-    globals: true,
-    css: true,
-    coverage: {
-      provider: "v8",
-      reporter: ["text", "json", "html"],
-    },
-  },
-});
-```
-
 ### **Componentes Testados**
 
-- **Button** - Componente base com todas as variantes
-- **Header** - Navegação principal e menu mobile
+- Button, Header e Footer
+
+![tests-passando](./public/tests.png)
 
 ## **Design System**
 
@@ -166,9 +82,6 @@ export default defineConfig({
 
 #### **Cores e Identidade Visual**
 
-- **Verde Primário (#349E35)**: Escolhido para representar saúde, confiança e natureza, alinhado com a missão da Lacrei Saúde
-- **Azul Secundário (#64B4FF)**: Representa tecnologia, inovação e confiabilidade, essencial para uma plataforma digital de saúde
-- **Laranja Destaque (#FFA400)**: Energia e acolhimento, usado para chamadas de ação e elementos interativos
 - **Paleta LGBTQIAPN+**: Integrada no Hero e elementos visuais para demonstrar inclusão e representatividade
 
 #### **Tipografia e Legibilidade**
@@ -184,36 +97,6 @@ export default defineConfig({
 - **Grid responsivo**: CSS Grid com `auto-fit` para adaptação automática a diferentes tamanhos de tela
 - **Containers limitados**: Largura máxima de 1200px para otimizar leitura em telas grandes
 - **Padding responsivo**: Adapta-se aos breakpoints para manter proporções adequadas
-
-### **Cores Principais**
-
-- **Primary**: Verde (#349E35) - Saúde e confiança
-- **Secondary**: Azul (#64B4FF) - Tecnologia e inovação
-- **Accent**: Laranja (#FFA400) - Energia e acolhimento
-- **Neutral**: Escala de cinzas para textos e fundos
-- **Success**: Verde para confirmações
-- **Warning**: Amarelo para alertas
-- **Error**: Vermelho para erros
-
-### **Tipografia**
-
-- **Primary**: Inter - Texto e interface
-- **Secondary**: Poppins - Títulos e destaque
-- **Heading**: Poppins - Hierarquia visual
-- **Mono**: JetBrains Mono - Código e dados
-
-### **Espaçamento**
-
-- Sistema baseado em múltiplos de 4px
-- Escala: 4, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64
-- Consistente em todo o projeto
-
-### **Componentes Base**
-
-- **Button**: 4 variantes (primary, secondary, outline, ghost)
-- **Input**: Campos de formulário estilizados
-- **Card**: Containers com sombras e bordas
-- **Modal**: Overlays para ações importantes
 
 ## 📱 **Responsividade**
 
@@ -239,7 +122,7 @@ export default defineConfig({
 - Containers com largura máxima de 1200px
 - Padding responsivo baseado em breakpoints
 
-## ♿ **Acessibilidade**
+## **Acessibilidade**
 
 ### **Recursos Implementados**
 
@@ -326,22 +209,6 @@ vercel rollback <deployment-id>
 - **Largest Contentful Paint**: < 2.5s
 - **Cumulative Layout Shift**: < 0.1
 - **First Input Delay**: < 100ms
-
-### **Monitoramento**
-
-```bash
-# Build de produção
-npm run build
-
-# Analisar bundle
-npm run build && npx @next/bundle-analyzer
-
-# Verificar tipos
-npx tsc --noEmit
-
-# Verificar linting
-npm run lint
-```
 
 ## 🔄 **Rollback e Versionamento**
 

@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest",
+    "test": "vitest --reporter=verbose",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run",
+    "test:run": "vitest run --reporter=verbose",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest --watch"
   },
