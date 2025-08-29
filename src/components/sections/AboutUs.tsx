@@ -4,13 +4,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutUsSection = styled.section`
-  /* Footer → qualquer elemento: 64px (Desktop) / 64px (Mobile) */
   padding: ${({ theme }) => theme.lacreiSpacing.desktop.footerToElement} 0;
   background-color: ${({ theme }) => theme.colors.neutral[50]};
 `;
 
 const Container = styled.div`
-  /* Grid System da Lacrei */
   width: 100%;
   max-width: ${({ theme }) => theme.grid.lg.maxWidth};
   margin: 0 auto;
@@ -58,7 +56,6 @@ const Title = styled.h1`
   font-size: ${({ theme }) => theme.typography.fontSize['5xl']};
   font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
   color: ${({ theme }) => theme.colors.neutral[900]};
-  /* Heading → qualquer elemento: 32px (Desktop) / 24px (Mobile) */
   margin-bottom: ${({ theme }) => theme.lacreiSpacing.desktop.headingToElement};
   line-height: 1.2;
   font-family: ${({ theme }) => theme.typography.fontFamily.secondary};

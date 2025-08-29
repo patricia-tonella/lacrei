@@ -1,30 +1,31 @@
-import type { Metadata, Viewport } from 'next'
-import { Nunito } from 'next/font/google'
-import { Header } from '@/components/layout/Header'
-import { Footer } from '@/components/layout/Footer'
-import { StyledComponentsProvider } from '@/components/providers/StyledComponentsProvider'
-import { GlobalStyles } from '@/styles/globals'
-import { ClientLayout } from '@/components/layout/ClientLayout'
+import type { Metadata, Viewport } from 'next';
+import { Nunito } from 'next/font/google';
+import { StyledComponentsProvider } from '@/components/providers/StyledComponentsProvider';
+import { GlobalStyles } from '@/styles/globals';
+import { ClientLayout } from '@/components/layout/ClientLayout';
 
-const nunito = Nunito({ 
+const nunito = Nunito({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap',
   preload: true,
-  fallback: ['system-ui', 'arial']
-})
+  fallback: ['system-ui', 'arial'],
+});
 
 export const metadata: Metadata = {
   title: 'Lacrei Saúde - Cuidando da sua saúde com excelência e humanização',
-  description: 'Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado. Sua saúde, nossa prioridade.',
-  keywords: 'saúde, telemedicina, consultas online, exames, vacinação, fisioterapia, psicologia',
+  description:
+    'Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado. Sua saúde, nossa prioridade.',
+  keywords:
+    'saúde, telemedicina, consultas online, exames, vacinação, fisioterapia, psicologia',
   authors: [{ name: 'Lacrei Saúde' }],
   creator: 'Lacrei Saúde',
   publisher: 'Lacrei Saúde',
   robots: 'index, follow',
   openGraph: {
     title: 'Lacrei Saúde - Cuidando da sua saúde com excelência e humanização',
-    description: 'Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado.',
+    description:
+      'Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado.',
     type: 'website',
     locale: 'pt_BR',
     siteName: 'Lacrei Saúde',
@@ -32,28 +33,29 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Lacrei Saúde - Cuidando da sua saúde com excelência e humanização',
-    description: 'Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado.',
+    description:
+      'Conectamos você aos melhores profissionais de saúde através de tecnologia inovadora e atendimento personalizado.',
   },
-}
+};
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: '#349E35',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang='pt-BR'>
       <head>
-        {/* CSS crítico inline para evitar FOUC */}
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            /* Prevenção de FOUC - Flash of Unstyled Content */
+        {/* CSS para evitar FOUC */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
             body { 
               opacity: 0; 
               transition: opacity 0.3s ease-in-out;
@@ -63,7 +65,6 @@ export default function RootLayout({
             body.loaded { 
               opacity: 1; 
             }
-            /* Skeleton loading para componentes principais */
             .skeleton {
               background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
               background-size: 200% 100%;
@@ -73,31 +74,29 @@ export default function RootLayout({
               0% { background-position: 200% 0; }
               100% { background-position: -200% 0; }
             }
-            /* Prevenção de layout shift */
             * {
               box-sizing: border-box;
             }
             html {
               scroll-behavior: smooth;
             }
-            /* Font display swap para melhor performance */
             @font-face {
               font-family: 'Nunito';
               font-display: swap;
             }
-          `
-        }} />
+          `,
+          }}
+        />
       </head>
       <body className={nunito.className}>
         <StyledComponentsProvider>
           <GlobalStyles />
-          <ClientLayout>
-            {children}
-          </ClientLayout>
+          <ClientLayout>{children}</ClientLayout>
         </StyledComponentsProvider>
         {/* Script para remover skeleton e mostrar conteúdo */}
-        <script dangerouslySetInnerHTML={{
-          __html: `
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             document.addEventListener('DOMContentLoaded', function() {
               // Remover skeleton loading
               const skeletons = document.querySelectorAll('.skeleton');
@@ -117,9 +116,10 @@ export default function RootLayout({
                 }
               });
             });
-          `
-        }} />
+          `,
+          }}
+        />
       </body>
     </html>
-  )
+  );
 }

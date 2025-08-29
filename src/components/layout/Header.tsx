@@ -86,17 +86,18 @@ const NavigationLinks = styled.nav`
 `;
 
 const NavLink = styled.a`
-  color: ${({ theme }) => theme.colors.neutral[900]};
+  color: ${({ theme }) => theme.colors.emerald[70]};
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.125rem;
+  font-weight: 700;
   transition: color 0.2s ease;
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 
   &:hover {
     color: ${({ theme }) => theme.colors.emerald[60]};
     background-color: rgba(1, 135, 98, 0.1);
+    border-radius: 0.5rem;
   }
 `;
 
@@ -203,7 +204,7 @@ export const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <Logo href='/'>
+        <Logo href='/lacrei'>
           <LogoImage>
             <Image
               src='logo_lacrei.svg'

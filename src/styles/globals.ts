@@ -39,7 +39,6 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 1rem;
   }
 
-  /* Acessibilidade */
   .skip-link {
     position: absolute;
     top: -40px;
@@ -57,7 +56,6 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  /* Focus styles */
   *:focus-visible {
     outline: 2px solid #0EA5E9;
     outline-offset: 2px;

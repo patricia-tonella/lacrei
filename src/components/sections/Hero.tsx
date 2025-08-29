@@ -20,7 +20,6 @@ const HeroSection = styled.section`
     #ff00ff 100%
   );
   overflow: hidden;
-  /* Header → qualquer elemento: 48px (Desktop) / 24px (Mobile) */
   margin-top: ${({ theme }) => theme.lacreiSpacing.desktop.headerToElement};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -29,11 +28,9 @@ const HeroSection = styled.section`
 `;
 
 const HeroContent = styled.div`
-  /* Grid System da Lacrei */
   width: 100%;
   max-width: ${({ theme }) => theme.grid.lg.maxWidth};
   margin: 0 auto;
-  /* Padding seguindo as regras da Lacrei */
   padding: ${({ theme }) => theme.lacreiSpacing.desktop.sectionToSection}
     ${({ theme }) => theme.grid.lg.margin};
   display: flex;
@@ -76,7 +73,6 @@ const HeroContent = styled.div`
 
 const TextContent = styled.div`
   background: rgba(255, 255, 255, 0.95);
-  /* Padding seguindo as regras da Lacrei */
   padding: ${({ theme }) => theme.lacreiSpacing.desktop.sectionToSection};
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -99,7 +95,6 @@ const HeroTitle = styled.h1`
   color: ${({ theme }) => theme.colors.emerald[70]};
   text-align: center;
   line-height: 1.2;
-  /* Heading → qualquer elemento: 32px (Desktop) / 24px (Mobile) */
   margin-bottom: ${({ theme }) => theme.lacreiSpacing.desktop.headingToElement};
   font-family: ${({ theme }) => theme.typography.fontFamily.secondary};
 
@@ -119,7 +114,6 @@ const HeroSubtitle = styled.p`
   font-size: ${({ theme }) => theme.typography.fontSize.xl};
   line-height: 1.7;
   color: ${({ theme }) => theme.colors.neutral[500]};
-  /* Text → qualquer elemento: 32px (Desktop) / 24px (Mobile) */
   margin-bottom: ${({ theme }) => theme.lacreiSpacing.desktop.buttonToElement};
   max-width: 700px;
   margin-left: auto;
@@ -139,7 +133,6 @@ const HeroSubtitle = styled.p`
 
 const HeroActions = styled.div`
   display: flex;
-  /* Botão → botão: 24px (Desktop) / 24px (Mobile) */
   gap: ${({ theme }) => theme.lacreiSpacing.desktop.buttonToButton};
   flex-wrap: wrap;
   justify-content: center;

@@ -10,16 +10,6 @@ export const theme = {
       70: '#007756', // Emerald-70
       80: '#014C37', // Emerald-80
     },
-    green: {
-      10: '#EBF9F0', // Green-10
-      20: '#C4EED1', // Green-20
-      30: '#9CE2B2', // Green-30
-      40: '#75D693', // Green-40
-      50: '#4ECB74', // Green-50
-      60: '#00B15C', // Green-60
-      70: '#298A46', // Green-70
-      80: '#113B1E', // Green-80
-    },
     success: {
       50: '#EBF9F0', // Green-10
       100: '#C4EED1', // Green-20
@@ -29,16 +19,6 @@ export const theme = {
       500: '#00B15C', // Green-60
       600: '#298A46', // Green-70
       700: '#113B1E', // Green-80
-    },
-    warning: {
-      50: '#FFF7ED',
-      100: '#FFEDD5',
-      200: '#FED7AA',
-      300: '#FDBA74',
-      400: '#FB923C',
-      500: '#F97316',
-      600: '#EA580C',
-      700: '#C2410C',
     },
     error: {
       50: '#FEF2F2',
@@ -61,116 +41,6 @@ export const theme = {
       700: '#374151',
       800: '#1F2937',
       900: '#111827',
-    },
-    accent: {
-      50: '#F0F9FF',
-      100: '#E0F2FE',
-      200: '#BAE6FD',
-      300: '#7DD3FC',
-      400: '#38BDF8',
-      500: '#0EA5E9',
-      600: '#0284C7',
-      700: '#0369A1',
-    },
-  },
-  semantic: {
-    background: {
-      primary: {
-        default: '#018762', // Emerald-60
-        hover: '#007756', // Emerald-70
-        active: '#014C37', // Emerald-80
-        disabled: '#B2DFD0', // Emerald-20
-      },
-      secondary: {
-        default: '#F3F4F6', // Neutral-100
-        hover: '#E5E7EB', // Neutral-200
-        active: '#D1D5DB', // Neutral-300
-      },
-      success: {
-        default: '#00B15C', // Green-60
-        light: '#EBF9F0', // Green-10
-      },
-      warning: {
-        default: '#F97316', // Warning-500
-        light: '#FFF7ED', // Warning-50
-      },
-      error: {
-        default: '#EF4444', // Error-500
-        light: '#FEF2F2', // Error-50
-      },
-    },
-    text: {
-      primary: {
-        default: '#111827', // Neutral-900
-        disabled: '#9CA3AF', // Neutral-400
-      },
-      secondary: {
-        default: '#6B7280', // Neutral-500
-        disabled: '#D1D5DB', // Neutral-300
-      },
-      inverse: {
-        default: '#FFFFFF',
-        disabled: '#F3F4F6', // Neutral-100
-      },
-      success: {
-        default: '#00B15C', // Green-60
-        light: '#298A46', // Green-70
-      },
-      warning: {
-        default: '#F97316', // Warning-500
-        light: '#EA580C', // Warning-600
-      },
-      error: {
-        default: '#EF4444', // Error-500
-        light: '#DC2626', // Error-600
-      },
-    },
-    border: {
-      primary: {
-        default: '#018762', // Emerald-60
-        hover: '#007756', // Emerald-70
-        disabled: '#B2DFD0', // Emerald-20
-      },
-      secondary: {
-        default: '#E5E7EB', // Neutral-200
-        hover: '#D1D5DB', // Neutral-300
-      },
-      success: {
-        default: '#00B15C', // Green-60
-        light: '#4ECB74', // Green-50
-      },
-      warning: {
-        default: '#F97316', // Warning-500
-        light: '#FB923C', // Warning-400
-      },
-      error: {
-        default: '#EF4444', // Error-500
-        light: '#F87171', // Error-400
-      },
-    },
-    icon: {
-      primary: {
-        default: '#018762', // Emerald-60
-        hover: '#007756', // Emerald-70
-        disabled: '#B2DFD0', // Emerald-20
-      },
-      secondary: {
-        default: '#6B7280', // Neutral-500
-        hover: '#4B5563', // Neutral-600
-        disabled: '#D1D5DB', // Neutral-300
-      },
-      success: {
-        default: '#00B15C', // Green-60
-        light: '#4ECB74', // Green-50
-      },
-      warning: {
-        default: '#F97316', // Warning-500
-        light: '#FB923C', // Warning-400
-      },
-      error: {
-        default: '#EF4444', // Error-500
-        light: '#F87171', // Error-400
-      },
     },
   },
   components: {
@@ -278,11 +148,13 @@ export const theme = {
             background: '#FFFFFF', // background-default
             text: '#0EA5E9', // color-accent (Accent-500)
             icon: '#0EA5E9', // icon-accent (Accent-500)
+            fontWeight: 700,
           },
           hover: {
             background: '#F0F9FF', // background-accent-100 (Accent-50)
             text: '#0284C7', // color-hover (Accent-600)
             icon: '#0284C7', // icon-hover (Accent-600)
+            borderRadius: '50px',
           },
           pressed: {
             background: '#E0F2FE', // background-accent-200 (Accent-100)
@@ -495,22 +367,6 @@ export const theme = {
       containerWidth: 'auto',
       maxWidth: '100%',
     },
-  },
-
-  zIndex: {
-    hide: -1,
-    auto: 'auto',
-    base: 0,
-    docked: 10,
-    dropdown: 1000,
-    sticky: 1100,
-    banner: 1200,
-    overlay: 1300,
-    modal: 1400,
-    popover: 1500,
-    skipLink: 1600,
-    toast: 1700,
-    tooltip: 1800,
   },
 };
 

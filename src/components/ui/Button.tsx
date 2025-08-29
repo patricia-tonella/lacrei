@@ -228,36 +228,27 @@ const getButtonStyles = (
 };
 
 const StyledButton = styled.button<ButtonProps>`
-  /* Propriedades base do Design System */
   height: 48px;
-  border-radius: 0.5rem; /* border-radius-lg - mais arredondado */
-  padding: 0 1.5rem; /* space-inline-xxm */
+  border-radius: 0.5rem;
+  padding: 0 1.5rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
-
-  /* Tipografia */
-  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    sans-serif;
-  font-size: 1.25rem; /* text-xl */
-  font-weight: 700; /* high200 */
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-size: 1.25rem;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
 
-  /* Layout */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: ${({ icon, iconPosition }) =>
-    icon ? '16px' : '0'}; /* spacing-inline-m */
+  gap: ${({ icon }) => (icon ? '16px' : '0')};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   white-space: nowrap;
 
-  /* Estados base */
   ${({ variant = 'primary' }) => getButtonStyles(variant)}
 
-  /* Tamanhos */
   ${({ size = 'md' }) => {
     switch (size) {
       case 'sm':
@@ -281,7 +272,6 @@ const StyledButton = styled.button<ButtonProps>`
     }
   }}
   
-  /* Ícones */
   .icon {
     width: 24px;
     height: 24px;
@@ -296,13 +286,11 @@ const StyledButton = styled.button<ButtonProps>`
     }
   }
 
-  /* Acessibilidade */
   &:focus-visible {
     outline: 2px solid;
     outline-offset: 2px;
   }
 
-  /* Redução de movimento */
   @media (prefers-reduced-motion: reduce) {
     transition: none;
   }
