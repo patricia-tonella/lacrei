@@ -1,17 +1,14 @@
-'use client'
+'use client';
 
-import { createGlobalStyle } from 'styled-components'
-import { theme } from './theme'
-
-// Importar fonte Nunito do Google Fonts
-import { Nunito } from 'next/font/google'
+import { createGlobalStyle } from 'styled-components';
+import { Nunito } from 'next/font/google';
 
 const nunito = Nunito({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap',
   variable: '--font-nunito',
-})
+});
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -65,4 +62,4 @@ export const GlobalStyles = createGlobalStyle`
     outline: 2px solid #0EA5E9;
     outline-offset: 2px;
   }
-`
+`;

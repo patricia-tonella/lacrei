@@ -1,13 +1,15 @@
-# 🏥 Lacrei Saúde - Plataforma de Saúde Inclusiva
+# 🏥 Lacrei Saúde - Desafio de Frontend para voluntários
 
-Plataforma web desenvolvida para conectar pessoas LGBTQIAPN+ com profissionais de saúde qualificados, proporcionando experiências de cuidado seguras e inclusivas.
+## **Link do projeto**
+
+[Link do Projeto](https://patricia-tonella.github.io/lacrei/)
 
 ## **Funcionalidades Implementadas**
 
 ### **Interface e Design**
 
-- **Header personalizado** com logo e navegação
-- **Footer completo** com informações da empresa
+- **Header** com logo e navegação
+- **Footer** com informações da empresa
 - **Hero section** com foco na comunidade LGBTQIAPN+
 - **Página "Quem Somos"** com missão e valores
 - **Design responsivo** mobile-first
@@ -134,62 +136,13 @@ O projeto usa **Vitest** com **React Testing Library** para testes unitários e 
 - **Skip links** para conteúdo principal
 - **Focus visible** para navegação
 
-### **Testes de Acessibilidade**
-
-```bash
-# Instalar Lighthouse CLI
-npm install -g lighthouse
-
-# Executar auditoria
-lighthouse http://localhost:3000 --view
-```
-
 ### **Métricas Alvo**
 
-- **Lighthouse Accessibility**: ≥ 90
-- **Contraste de cores**: ≥ 4.5:1
-- **Navegação por teclado**: 100% funcional
-- **Screen reader**: Compatível com NVDA/VoiceOver
+![lighthouse-mobile-report](/public/lighthouse-mobile.png)
 
-## 🚀 **Deploy**
+![lighthouse-desktop-report](/public/lighthouse-desktop.png)
 
-### **Vercel (Recomendado)**
-
-```bash
-# Instalar Vercel CLI
-npm i -g vercel
-
-# Login na conta
-vercel login
-
-# Deploy inicial
-vercel
-
-# Deploy de produção
-vercel --prod
-
-# Listar deployments
-vercel ls
-
-# Rollback para versão anterior
-vercel rollback <deployment-id>
-```
-
-### **Configuração Automática**
-
-- **Build Command**: `npm run build`
-- **Output Directory**: `.next`
-- **Install Command**: `npm install`
-- **Framework Preset**: Next.js
-
-### **Outras Plataformas**
-
-- **Netlify**: Compatível com Next.js
-- **Railway**: Deploy simples e rápido
-- **AWS Amplify**: Para projetos empresariais
-- **Docker**: Containerização disponível
-
-## 📊 **Performance**
+## **Performance**
 
 ### **Otimizações Implementadas**
 
@@ -199,27 +152,10 @@ vercel rollback <deployment-id>
 - **Code splitting** automático
 - **Tree shaking** para reduzir bundle
 - **Font optimization** com display=swap
-- **CSS optimization** com Styled-Components
-
-### **Métricas Alvo**
-
-- **Lighthouse Performance**: ≥ 80
-- **Lighthouse Accessibility**: ≥ 90
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-- **First Input Delay**: < 100ms
 
 ## 🔄 **Rollback e Versionamento**
 
 ### **Estratégia de Rollback**
-
-1. **Vercel**: Usar Preview Deployments
-2. **Git**: Tags para releases estáveis
-3. **Backup**: Dados mockados versionados
-4. **Database**: Backup automático (quando implementado)
-
-### **Comandos de Rollback**
 
 ```bash
 # Voltar para versão anterior
