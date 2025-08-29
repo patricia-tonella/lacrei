@@ -168,7 +168,7 @@ export const Footer: React.FC = () => {
               <FooterLogo>
                 <LogoImage>
                   <Image
-                    src='/logo_lacrei.svg'
+                    src='logo_lacrei.svg'
                     alt='Logo da Lacrei Saúde que redireciona para a página principal'
                     width={170}
                     height={48}
@@ -236,31 +236,31 @@ export const Footer: React.FC = () => {
 
             <FooterColumn>
               <FooterTitle>Lacrei Saúde</FooterTitle>
-              <FooterLink href='/quem-somos'>Quem Somos</FooterLink>
-              <FooterLink href='/nosso-proposito'>Nosso Propósito</FooterLink>
-              <FooterLink href='/missao-visao-valor'>
+              <FooterLink href='quem-somos'>Quem Somos</FooterLink>
+              <FooterLink href='nosso-proposito'>Nosso Propósito</FooterLink>
+              <FooterLink href='missao-visao-valor'>
                 Missão, Visão e Valor
               </FooterLink>
-              <FooterLink href='/acessibilidade'>Acessibilidade</FooterLink>
+              <FooterLink href='acessibilidade'>Acessibilidade</FooterLink>
             </FooterColumn>
 
             <FooterColumn>
               <FooterTitle>Saúde</FooterTitle>
-              <FooterLink href='/buscar-atendimento'>
+              <FooterLink href='buscar-atendimento'>
                 Buscar atendimento
               </FooterLink>
-              <FooterLink href='/oferecer-atendimento'>
+              <FooterLink href='oferecer-atendimento'>
                 Oferecer atendimento
               </FooterLink>
             </FooterColumn>
 
             <FooterColumn>
               <FooterTitle>Segurança e Privacidade</FooterTitle>
-              <FooterLink href='/politica-privacidade'>
+              <FooterLink href='politica-privacidade'>
                 Política de Privacidade
               </FooterLink>
-              <FooterLink href='/termos-uso'>Termos de Uso</FooterLink>
-              <FooterLink href='/direitos-titular'>
+              <FooterLink href='termos-uso'>Termos de Uso</FooterLink>
+              <FooterLink href='direitos-titular'>
                 Direitos de Titular
               </FooterLink>
             </FooterColumn>

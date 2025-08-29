@@ -22,7 +22,7 @@ vi.mock('../Footer', () => ({
   Footer: () => (
     <footer>
       <div>
-        <img src='/logo_lacrei.svg' alt='Logo da Lacrei Saúde' />
+        <img src='logo_lacrei.svg' alt='Logo da Lacrei Saúde' />
         <div>
           <h3>Lacrei Saúde</h3>
           <h3>Saúde</h3>

@@ -21,7 +21,7 @@ vi.mock('../Header', () => ({
   Header: () => (
     <header>
       <div>
-        <img src='/logo_lacrei.svg' alt='Logo da Lacrei Saúde' />
+        <img src='logo_lacrei.svg' alt='Logo da Lacrei Saúde' />
         <nav>
           <a href='/quem-somos'>Quem Somos</a>
           <a href='/ajuda'>Ajuda</a>
